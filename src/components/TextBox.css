@@ -1,0 +1,44 @@
+.text-box-content {
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.text-box-content:hover .show-btn {
+    opacity: 1;
+}
+
+.text-box {
+    width: 80%;
+    display: flex;
+}
+
+.input { 
+    padding: 0 .5rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.add-delete-btn {
+    margin-right: .2rem;
+    padding: .2rem;
+    width: 1.5rem;
+    border-radius: 5px;
+    background-color: inherit;
+    color: #AFAFAD;
+    opacity: 0;
+    transition: linear 300ms;
+}
+
+.add-delete-btn:hover {
+    background-color: #EFEFEF;
+}
+
+div:empty:before {
+    content:attr(placeholder);
+    color:gray
+  }
+
+.input:focus-visible {
+    outline: none;
+}
